@@ -78,19 +78,19 @@
         </style>
         <nav class="navbar">
             <div class="nav-container">
-                <a href="/evolucion4" class="logo">EVO ↑</a>
+                <a href="/" class="logo">MyEvo</a>
                 <button class="menu-toggle" onclick="toggleMenu()">☰</button>
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="/evolucion4" th:classappend="${#httpServletRequest.requestURI == '/evolucion4' or #httpServletRequest.requestURI == '/'} ? 'active'">Inicio</a></li>
-                    <li><a href="/evolucion4/problema" th:classappend="${#httpServletRequest.requestURI == '/evolucion4/problema'} ? 'active'">El Problema</a></li>
-                    <li><a href="/evolucion4/solucion" th:classappend="${#httpServletRequest.requestURI == '/evolucion4/solucion'} ? 'active'">La Solución</a></li>
-                    <li><a href="/evolucion4/como-funciona" th:classappend="${#httpServletRequest.requestURI == '/evolucion4/como-funciona'} ? 'active'">Cómo Funciona</a></li>
-                    <li><a href="/evolucion4/beneficios" th:classappend="${#httpServletRequest.requestURI == '/evolucion4/beneficios'} ? 'active'">Beneficios</a></li>
-                    <li><a href="/evolucion4/ejemplo" th:classappend="${#httpServletRequest.requestURI == '/evolucion4/ejemplo'} ? 'active'">Ejemplo</a></li>
-                    <li><a href="/evolucion4/para-quien" th:classappend="${#httpServletRequest.requestURI == '/evolucion4/para-quien'} ? 'active'">Para Quién</a></li>
-                    <li><a href="/evolucion4/diferencias" th:classappend="${#httpServletRequest.requestURI == '/evolucion4/diferencias'} ? 'active'">Diferencias</a></li>
-                    <li><a href="/evolucion4/seguridad" th:classappend="${#httpServletRequest.requestURI == '/evolucion4/seguridad'} ? 'active'">Seguridad</a></li>
-                    <li><a href="/evolucion4/faq" th:classappend="${#httpServletRequest.requestURI == '/evolucion4/faq'} ? 'active'">FAQ</a></li>
+                    <li><a href="/" th:classappend="${#httpServletRequest.requestURI == '/'} ? 'active'">Inicio</a></li>
+                    <li><a href="/problema" th:classappend="${#httpServletRequest.requestURI == '/problema'} ? 'active'">El Problema</a></li>
+                    <li><a href="/solucion" th:classappend="${#httpServletRequest.requestURI == '/solucion'} ? 'active'">La Solución</a></li>
+                    <li><a href="/como-funciona" th:classappend="${#httpServletRequest.requestURI == '/como-funciona'} ? 'active'">Cómo Funciona</a></li>
+                    <li><a href="/beneficios" th:classappend="${#httpServletRequest.requestURI == '/beneficios'} ? 'active'">Beneficios</a></li>
+                    <li><a href="/ejemplo" th:classappend="${#httpServletRequest.requestURI == '/ejemplo'} ? 'active'">Ejemplo</a></li>
+                    <li><a href="/para-quien" th:classappend="${#httpServletRequest.requestURI == '/para-quien'} ? 'active'">Para Quién</a></li>
+                    <li><a href="/diferencias" th:classappend="${#httpServletRequest.requestURI == '/diferencias'} ? 'active'">Diferencias</a></li>
+                    <li><a href="/seguridad" th:classappend="${#httpServletRequest.requestURI == '/seguridad'} ? 'active'">Seguridad</a></li>
+                    <li><a href="/faq" th:classappend="${#httpServletRequest.requestURI == '/faq'} ? 'active'">FAQ</a></li>
                 </ul>
             </div>
         </nav>
@@ -141,12 +141,12 @@
         <footer>
             <div class="footer-content">
                 <div class="footer-links">
-                    <a href="/evolucion4/seguridad">Privacidad</a>
-                    <a href="/evolucion4/faq">Términos</a>
-                    <a href="#contacto">Contacto</a>
+                    <a href="/seguridad">Privacidad</a>
+                    <a href="/faq">Términos</a>
+                    <a href="/contacto">Contacto</a>
                 </div>
                 <div class="copyright">
-                    <p>EVO ↑ © 2026</p>
+                    <p>MyEvo © 2026</p>
                 </div>
             </div>
         </footer>

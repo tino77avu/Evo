@@ -14,97 +14,92 @@ public class EvolucionController {
         return "evolucion4";
     }
 
-    @GetMapping("/evolucion4")
-    public String evolucion4() {
-        return "evolucion4";
-    }
-
-    @GetMapping("/evolucion4/el-cambio")
+    @GetMapping("/el-cambio")
     public String elCambio() {
         return "el-cambio";
     }
 
-    @GetMapping("/evolucion4/problema")
+    @GetMapping("/problema")
     public String problema() {
         return "problema";
     }
 
-    @GetMapping("/evolucion4/solucion")
+    @GetMapping("/solucion")
     public String solucion() {
         return "solucion";
     }
 
-    @GetMapping("/evolucion4/como-funciona")
+    @GetMapping("/como-funciona")
     public String comoFunciona() {
         return "como-funciona";
     }
 
-    @GetMapping("/evolucion4/lo-que-logras")
+    @GetMapping("/lo-que-logras")
     public String loQueLogras() {
         return "lo-que-logras";
     }
 
-    @GetMapping("/evolucion4/beneficios")
+    @GetMapping("/beneficios")
     public String beneficios() {
         return "beneficios";
     }
 
-    @GetMapping("/evolucion4/ejemplo")
+    @GetMapping("/ejemplo")
     public String ejemplo() {
         return "ejemplo";
     }
 
-    @GetMapping("/evolucion4/por-que-evo")
+    @GetMapping("/por-que-evo")
     public String porQueEvo() {
         return "por-que-evo";
     }
 
-    @GetMapping("/evolucion4/para-quien")
+    @GetMapping("/para-quien")
     public String paraQuien() {
         return "para-quien";
     }
 
-    @GetMapping("/evolucion4/diferencias")
+    @GetMapping("/diferencias")
     public String diferencias() {
         return "diferencias";
     }
 
-    @GetMapping("/evolucion4/seguridad")
+    @GetMapping("/seguridad")
     public String seguridad() {
         return "seguridad";
     }
 
-    @GetMapping("/evolucion4/faq")
+    @GetMapping("/faq")
     public String faq() {
         return "faq";
     }
 
-    @GetMapping("/evolucion4/contacto")
+    @GetMapping("/contacto")
     public String contacto() {
         return "contacto";
     }
 
-    @GetMapping("/evolucion4/politica-privacidad")
+    @GetMapping("/politica-privacidad")
     public String politicaPrivacidad() {
         return "politica-privacidad";
     }
 
-    @GetMapping("/evolucion4/terminos-condiciones")
+    @GetMapping("/terminos-condiciones")
     public String terminosCondiciones() {
         return "terminos-condiciones";
     }
 
-    @GetMapping("/evolucion4/politica-cookies")
+    @GetMapping("/politica-cookies")
     public String politicaCookies() {
         return "politica-cookies";
     }
 
-    @GetMapping("/evolucion4/planes")
+    @GetMapping("/planes")
     public String planes() {
         return "planes";
     }
 
-    @PostMapping("/evolucion4/contacto")
+    @PostMapping("/contacto")
     public String enviarConsulta(
             @RequestParam String nombre,
             @RequestParam String email,
@@ -117,6 +112,6 @@ public class EvolucionController {
         
         // Por ahora, solo redirigimos con un mensaje de éxito
         redirectAttributes.addFlashAttribute("mensaje", "¡Gracias por contactarnos! Te responderemos pronto.");
-        return "redirect:/evolucion4/contacto?exito=true";
+        return "redirect:/contacto?exito=true";
     }
 }
